@@ -1,4 +1,4 @@
-import { Application, Container, Rectangle, RenderTexture, Sprite } from 'pixi.js';
+import { Application, Assets, Container, Rectangle, RenderTexture, Sprite } from 'pixi.js';
 
 import { initAssets } from './utils/assets';
 import JSZip from 'jszip';
@@ -10,7 +10,7 @@ export const app = new Application();
 async function init() {
     // Initialize app
     await app.init({
-        resolution: Math.max(window.devicePixelRatio, 2),
+        // resolution: 1,
         backgroundColor: 0x000000,
     });
 
@@ -23,37 +23,30 @@ async function init() {
     const sprite = Sprite.from("graphic.png")
     const container = new Container();
     container.addChild(sprite);
-    app.stage.addChild(container)
+    // app.stage.addChild(container)
 
-    const regions = []; // Define your regions
-    for (let i = 0; i < 10; i++) {
-        for (let j = 0; j < 10; j++) {
-            regions.push(new Rectangle(i * 100, j * 100, 100, 100)); // Example dynamic regions
-        }
-    }
+    const regions = await parseXMLRegions(Assets.get("graphic.xml"));
+    saveRegionsAsZip(container, regions, "unpacked.zip")
 
-    // saveRegionsAsZip(container, regions, 'regions.zip');
 }
 
 async function saveRegionsAsZip(
     container: Container,
-    regions: Rectangle[],
+    regions: { name: string; rectangle: Rectangle; frame?: { x: number; y: number; width: number; height: number } }[],
     zipFileName: string
 ) {
-    const renderer = app.renderer; // Assuming `app` is your PIXI Application
+    const renderer = app.renderer;
     const zip = new JSZip();
 
     for (let i = 0; i < regions.length; i++) {
-        const region = regions[i];
-        const { x, y, width, height } = region;
+        const { name, rectangle, frame } = regions[i];
+        const { x, y, width, height } = rectangle;
 
-        // Create a render texture of the desired region size
+        // Create a render texture for the trimmed region
         const renderTexture = RenderTexture.create({ width, height });
 
-        // Clone the container to isolate rendering
+        // Clone the container for rendering
         const clonedContainer = cloneContainer(container);
-
-        // Offset the cloned container to match the desired region
         clonedContainer.x = -x;
         clonedContainer.y = -y;
 
@@ -65,14 +58,40 @@ async function saveRegionsAsZip(
 
         // Extract the image as a canvas
         const canvas = renderer.extract.canvas(renderTexture) as HTMLCanvasElement;
-        const dataURL = canvas.toDataURL('image/png');
 
-        // Convert data URL to Blob
-        const response = await fetch(dataURL);
-        const blob = await response.blob();
+        if (frame) {
+            const { x: frameX, y: frameY, width: frameWidth, height: frameHeight } = frame;
 
-        // Add Blob to ZIP file
-        zip.file(`region_${i + 1}.png`, blob);
+            // Create a new canvas for the full frame
+            const frameCanvas = document.createElement("canvas");
+            frameCanvas.width = frameWidth;
+            frameCanvas.height = frameHeight;
+
+            const context = frameCanvas.getContext("2d")!;
+            // Draw the trimmed texture onto the full frame
+            // Adjust position using relative frameX and frameY
+            context.drawImage(canvas, 0, 0, width, height, -frameX, -frameY, width, height);
+
+            // Replace the original canvas with the frame canvas
+            const dataURL = frameCanvas.toDataURL("image/png");
+
+            // Convert data URL to Blob
+            const response = await fetch(dataURL);
+            const blob = await response.blob();
+
+            // Add Blob to ZIP file
+            zip.file(`${name}.png`, blob);
+        } else {
+            // No frame, use the original trimmed canvas
+            const dataURL = canvas.toDataURL("image/png");
+
+            // Convert data URL to Blob
+            const response = await fetch(dataURL);
+            const blob = await response.blob();
+
+            // Add Blob to ZIP file
+            zip.file(`${name}.png`, blob);
+        }
 
         // Cleanup
         renderTexture.destroy(true);
@@ -80,8 +99,8 @@ async function saveRegionsAsZip(
     }
 
     // Generate ZIP and trigger download
-    zip.generateAsync({ type: 'blob' }).then((content) => {
-        const link = document.createElement('a');
+    zip.generateAsync({ type: "blob" }).then((content) => {
+        const link = document.createElement("a");
         link.href = URL.createObjectURL(content);
         link.download = zipFileName;
         link.click();
@@ -111,6 +130,45 @@ function cloneContainer(container: Container): Container {
 
     return clone;
 }
+
+async function parseXMLRegions(xmlContent: string) {
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(xmlContent, "application/xml");
+
+    const regions: {
+        name: string;
+        rectangle: Rectangle;
+        frame?: { x: number; y: number; width: number; height: number };
+    }[] = [];
+
+    const subTextures = xmlDoc.getElementsByTagName("SubTexture");
+
+    for (const subTexture of Array.from(subTextures)) {
+        const name = subTexture.getAttribute("name") || "unknown";
+        const x = parseFloat(subTexture.getAttribute("x") || "0");
+        const y = parseFloat(subTexture.getAttribute("y") || "0");
+        const width = parseFloat(subTexture.getAttribute("width") || "0");
+        const height = parseFloat(subTexture.getAttribute("height") || "0");
+
+        // Optional frame attributes
+        const frameX = parseFloat(subTexture.getAttribute("frameX") || "0");
+        const frameY = parseFloat(subTexture.getAttribute("frameY") || "0");
+        const frameWidth = parseFloat(subTexture.getAttribute("frameWidth") || width);
+        const frameHeight = parseFloat(subTexture.getAttribute("frameHeight") || height);
+
+        const rectangle = new Rectangle(x, y, width, height);
+
+        // Frame data if applicable
+        const frame = frameWidth && frameHeight
+            ? { x: frameX, y: frameY, width: frameWidth, height: frameHeight }
+            : undefined;
+
+        regions.push({ name, rectangle, frame });
+    }
+
+    return regions;
+}
+
 
 // Init everything
 init();

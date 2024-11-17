@@ -7,6 +7,7 @@ export default {
     pipes: [
         ...pixiPipes({
             compression: { jpg: false, png: false, webp: false },
+            resolutions: { default: 1 },
             texturePacker: {
                 texturePacker: {
                     removeFileExtension: true,
