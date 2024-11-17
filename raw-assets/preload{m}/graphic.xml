@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:0428108b08b9d6d3f5767044b64ffae7$ -->
+<TextureAtlas imagePath="graphic.png">
+    <SubTexture name="animation/bomb/circle_white" x="764" y="413" width="208" height="208"/>
+    <SubTexture name="animation/bomb/flare" x="2" y="129" width="400" height="401"/>
+    <SubTexture name="animation/bomb/line_2" x="1589" y="1205" width="68" height="100"/>
+    <SubTexture name="animation/bomb/line_blue" x="1973" y="960" width="69" height="100"/>
+    <SubTexture name="animation/bomb/line_flare" x="1639" y="2" width="196" height="10"/>
+    <SubTexture name="animation/bomb/line_front" x="1093" y="682" width="86" height="154"/>
+    <SubTexture name="animation/bomb/line_front_blue" x="950" y="705" width="91" height="160"/>
+    <SubTexture name="animation/bomb/line_front_green" x="857" y="623" width="91" height="160"/>
+    <SubTexture name="animation/bomb/line_front_purple" x="670" y="689" width="91" height="160"/>
+    <SubTexture name="animation/bomb/line_front_red" x="764" y="623" width="91" height="160"/>
+    <SubTexture name="animation/bomb/line_front_white" x="1788" y="1106" width="91" height="160"/>
+    <SubTexture name="animation/bomb/line_front_yellow" x="1695" y="1037" width="91" height="160"/>
+    <SubTexture name="animation/bomb/line_green" x="1975" y="858" width="69" height="100"/>
+    <SubTexture name="animation/bomb/line_purple" x="1975" y="756" width="69" height="100"/>
+    <SubTexture name="animation/bomb/line_red" x="1519" y="1204" width="68" height="100"/>
+    <SubTexture name="animation/bomb/line_white" x="1589" y="1103" width="68" height="100"/>
+    <SubTexture name="animation/bomb/line_yellow" x="1519" y="1102" width="68" height="100"/>
+    <SubTexture name="animation/bomb/little_flare" x="1592" y="1000" width="101" height="101"/>
+    <SubTexture name="animation/bomb/plane_blue" x="1399" y="979" width="90" height="110"/>
+    <SubTexture name="animation/bomb/plane_green" x="1207" y="970" width="90" height="110"/>
+    <SubTexture name="animation/bomb/plane_purple" x="1307" y="920" width="90" height="110"/>
+    <SubTexture name="animation/bomb/plane_red" x="1215" y="858" width="90" height="110"/>
+    <SubTexture name="animation/bomb/plane_white" x="1881" y="1171" width="90" height="110"/>
+    <SubTexture name="animation/bomb/plane_yellow" x="1696" y="925" width="90" height="110"/>
+    <SubTexture name="animation/bomb/rainbow_3" x="1432" y="2" width="205" height="204"/>
+    <SubTexture name="animation/bomb/wave" x="1163" y="907" width="50" height="50"/>
+    <SubTexture name="animation/bomb/wave_big" x="1794" y="581" width="179" height="179"/>
+    <SubTexture name="animation/bomb/wave_blue" x="1432" y="465" width="179" height="179"/>
+    <SubTexture name="animation/bomb/wave_green" x="1613" y="427" width="179" height="179"/>
+    <SubTexture name="animation/bomb/wave_purple" x="1794" y="581" width="179" height="179"/>
+    <SubTexture name="animation/bomb/wave_red" x="1799" y="400" width="179" height="179"/>
+    <SubTexture name="animation/bomb/wave_white" x="1432" y="284" width="179" height="179"/>
+    <SubTexture name="animation/bomb/wave_yellow" x="1618" y="246" width="179" height="179"/>
+    <SubTexture name="board/blocks/rock_1" x="2" y="1120" width="68" height="68"/>
+    <SubTexture name="board/blocks/rock_2" x="492" y="1096" width="68" height="68"/>
+    <SubTexture name="board/blocks/rock_3" x="422" y="1096" width="68" height="68"/>
+    <SubTexture name="board/blocks/rock_4" x="282" y="1116" width="68" height="68"/>
+    <SubTexture name="board/blocks/rock_border_1" x="142" y="1125" width="68" height="3"/>
+    <SubTexture name="board/blocks/rock_border_2" x="404" y="199" width="3" height="68"/>
+    <SubTexture name="board/blocks/rock_border_3" x="142" y="1120" width="68" height="3"/>
+    <SubTexture name="board/blocks/rock_border_4" x="404" y="129" width="3" height="68"/>
+    <SubTexture name="board/blocks/soil_0001" x="212" y="1116" width="68" height="68"/>
+    <SubTexture name="board/blocks/soil_0002" x="352" y="1096" width="68" height="68"/>
+    <SubTexture name="board/blocks/soil_0003" x="1286" y="1194" width="68" height="68"/>
+    <SubTexture name="board/blocks/soil_0004" x="1216" y="1194" width="68" height="68"/>
+    <SubTexture name="board/blocks/soil_0005" x="1146" y="1152" width="68" height="68"/>
+    <SubTexture name="board/blocks/soil_0006" x="1076" y="1119" width="68" height="68"/>
+    <SubTexture name="board/blocks/soil_0007" x="1006" y="1088" width="68" height="68"/>
+    <SubTexture name="board/blocks/soil_0008" x="936" y="1038" width="68" height="68"/>
+    <SubTexture name="board/blocks/soil_border_0001" x="72" y="1120" width="68" height="15" frameX="0" frameY="-7" frameWidth="68" frameHeight="23"/>
+    <SubTexture name="board/blocks/soil_border_0002" x="382" y="699" width="15" height="68" frameX="0" frameY="0" frameWidth="23" frameHeight="68"/>
+    <SubTexture name="board/blocks/soil_border_0003" x="1973" y="1062" width="69" height="13" frameX="0" frameY="-2" frameWidth="69" frameHeight="23"/>
+    <SubTexture name="board/blocks/soil_border_0004" x="382" y="629" width="15" height="68" frameX="-8" frameY="0" frameWidth="23" frameHeight="68"/>
+    <SubTexture name="board/blocks/soil_corner_0001" x="731" y="158" width="27" height="28" frameX="0" frameY="-16" frameWidth="45" frameHeight="44"/>
+    <SubTexture name="board/blocks/soil_corner_0002" x="731" y="246" width="27" height="27" frameX="0" frameY="0" frameWidth="45" frameHeight="45"/>
+    <SubTexture name="board/blocks/soil_corner_0003" x="731" y="217" width="27" height="27" frameX="-18" frameY="0" frameWidth="45" frameHeight="45"/>
+    <SubTexture name="board/blocks/soil_corner_0004" x="731" y="126" width="27" height="30" frameX="-18" frameY="-14" frameWidth="45" frameHeight="44"/>
+    <SubTexture name="board/blocks/stone_1" x="142" y="1130" width="66" height="58" frameX="-2" frameY="-10" frameWidth="68" frameHeight="68"/>
+    <SubTexture name="board/blocks/stone_2" x="1545" y="706" width="66" height="58" frameX="-2" frameY="-10" frameWidth="68" frameHeight="68"/>
+    <SubTexture name="board/blocks/stone_3" x="1545" y="646" width="66" height="58" frameX="-2" frameY="-10" frameWidth="68" frameHeight="68"/>
+    <SubTexture name="board/blocks/stone_4" x="1980" y="534" width="66" height="58" frameX="-2" frameY="-10" frameWidth="68" frameHeight="68"/>
+    <SubTexture name="board/borders/grid_1" x="1181" y="819" width="34" height="34"/>
+    <SubTexture name="board/borders/grid_2" x="758" y="301" width="4" height="34" frameX="0" frameY="0" frameWidth="34" frameHeight="34"/>
+    <SubTexture name="board/borders/grid_3" x="757" y="337" width="4" height="4" frameX="0" frameY="0" frameWidth="34" frameHeight="34"/>
+    <SubTexture name="board/borders/grid_4" x="1659" y="1121" width="34" height="4" frameX="0" frameY="0" frameWidth="34" frameHeight="34"/>
+    <SubTexture name="board/crystal/crystal_big" x="886" y="1108" width="60" height="57"/>
+    <SubTexture name="board/crystal/crystal_big_screen" x="824" y="1077" width="60" height="57"/>
+    <SubTexture name="board/crystal/crystal_small" x="731" y="188" width="27" height="27" frameX="-1" frameY="0" frameWidth="29" frameHeight="27"/>
+    <SubTexture name="board/crystal/crystal_small_screen" x="1043" y="853" width="43" height="43"/>
+    <SubTexture name="board/gems/b21" x="866" y="1007" width="68" height="68"/>
+    <SubTexture name="board/gems/b21_screen" x="796" y="995" width="68" height="68"/>
+    <SubTexture name="board/gems/b22" x="726" y="995" width="68" height="68"/>
+    <SubTexture name="board/gems/b22_screen" x="562" y="1061" width="68" height="68"/>
+    <SubTexture name="board/gems/b23" x="656" y="995" width="68" height="68"/>
+    <SubTexture name="board/gems/b23_screen" x="142" y="1050" width="68" height="68"/>
+    <SubTexture name="board/gems/b24" x="72" y="1050" width="68" height="68"/>
+    <SubTexture name="board/gems/b24_screen" x="2" y="1050" width="68" height="68"/>
+    <SubTexture name="board/gems/b25" x="492" y="1026" width="68" height="68"/>
+    <SubTexture name="board/gems/b25_screen" x="422" y="1026" width="68" height="68"/>
+    <SubTexture name="board/gems/b26" x="282" y="1046" width="68" height="68"/>
+    <SubTexture name="board/gems/b26_screen" x="212" y="1046" width="68" height="68"/>
+    <SubTexture name="board/gems/barrel" x="352" y="1026" width="68" height="68"/>
+    <SubTexture name="board/gems/barrel_screen" x="1314" y="1124" width="68" height="68"/>
+    <SubTexture name="board/gems/eye_1" x="382" y="594" width="19" height="19"/>
+    <SubTexture name="board/gems/eye_2" x="2016" y="113" width="22" height="22"/>
+    <SubTexture name="board/gems/eye_3" x="731" y="381" width="24" height="24"/>
+    <SubTexture name="board/gems/eye_4" x="670" y="384" width="21" height="21"/>
+    <SubTexture name="board/gems/eye_5" x="693" y="384" width="20" height="20"/>
+    <SubTexture name="board/gems/eye_6" x="731" y="355" width="24" height="24"/>
+    <SubTexture name="board/gems/eye_7" x="731" y="328" width="24" height="25"/>
+    <SubTexture name="board/gems/g21" x="1244" y="1124" width="68" height="68"/>
+    <SubTexture name="board/gems/g21_screen" x="1174" y="1082" width="68" height="68"/>
+    <SubTexture name="board/gems/g22" x="1104" y="1049" width="68" height="68"/>
+    <SubTexture name="board/gems/g22_screen" x="1034" y="1018" width="68" height="68"/>
+    <SubTexture name="board/gems/g23" x="964" y="968" width="68" height="68"/>
+    <SubTexture name="board/gems/g23_screen" x="894" y="937" width="68" height="68"/>
+    <SubTexture name="board/gems/g24" x="824" y="925" width="68" height="68"/>
+    <SubTexture name="board/gems/g24_screen" x="754" y="925" width="68" height="68"/>
+    <SubTexture name="board/gems/g25" x="586" y="991" width="68" height="68"/>
+    <SubTexture name="board/gems/g25_screen" x="684" y="925" width="68" height="68"/>
+    <SubTexture name="board/gems/g26" x="142" y="980" width="68" height="68"/>
+    <SubTexture name="board/gems/g26_screen" x="72" y="980" width="68" height="68"/>
+    <SubTexture name="board/gems/pupil_1" x="2016" y="102" width="9" height="9"/>
+    <SubTexture name="board/gems/pupil_2" x="2030" y="15" width="11" height="11"/>
+    <SubTexture name="board/gems/pupil_3" x="715" y="384" width="12" height="12"/>
+    <SubTexture name="board/gems/pupil_4" x="2030" y="94" width="10" height="10"/>
+    <SubTexture name="board/gems/pupil_5" x="2030" y="82" width="10" height="10"/>
+    <SubTexture name="board/gems/pupil_6" x="2030" y="2" width="11" height="11"/>
+    <SubTexture name="board/gems/pupil_7" x="363" y="744" width="11" height="11"/>
+    <SubTexture name="board/gems/s21" x="2" y="980" width="68" height="68"/>
+    <SubTexture name="board/gems/s21_screen" x="516" y="956" width="68" height="68"/>
+    <SubTexture name="board/gems/s21_v" x="446" y="956" width="68" height="68"/>
+    <SubTexture name="board/gems/s21_v_screen" x="282" y="976" width="68" height="68"/>
+    <SubTexture name="board/gems/s22" x="212" y="976" width="68" height="68"/>
+    <SubTexture name="board/gems/s22_screen" x="376" y="956" width="68" height="68"/>
+    <SubTexture name="board/gems/s22_v" x="142" y="910" width="68" height="68"/>
+    <SubTexture name="board/gems/s22_v_screen" x="72" y="910" width="68" height="68"/>
+    <SubTexture name="board/gems/s23" x="2" y="910" width="68" height="68"/>
+    <SubTexture name="board/gems/s23_screen" x="614" y="921" width="68" height="68"/>
+    <SubTexture name="board/gems/s23_v" x="544" y="886" width="68" height="68"/>
+    <SubTexture name="board/gems/s23_v_screen" x="474" y="886" width="68" height="68"/>
+    <SubTexture name="board/gems/s24" x="306" y="906" width="68" height="68"/>
+    <SubTexture name="board/gems/s24_screen" x="236" y="906" width="68" height="68"/>
+    <SubTexture name="board/gems/s24_v" x="404" y="886" width="68" height="68"/>
+    <SubTexture name="board/gems/s24_v_screen" x="810" y="855" width="68" height="68"/>
+    <SubTexture name="board/gems/s25" x="740" y="855" width="68" height="68"/>
+    <SubTexture name="board/gems/s25_screen" x="1007" y="898" width="68" height="68"/>
+    <SubTexture name="board/gems/s25_v" x="937" y="867" width="68" height="68"/>
+    <SubTexture name="board/gems/s25_v_screen" x="833" y="785" width="68" height="68"/>
+    <SubTexture name="board/gems/s26" x="670" y="851" width="68" height="68"/>
+    <SubTexture name="board/gems/s26_screen" x="763" y="785" width="68" height="68"/>
+    <SubTexture name="board/gems/s26_v" x="1971" y="1507" width="68" height="68"/>
+    <SubTexture name="board/gems/s26_v_screen" x="1971" y="1437" width="68" height="68"/>
+    <SubTexture name="board/gems/star" x="1867" y="1423" width="68" height="68"/>
+    <SubTexture name="board/gems/star_screen" x="1867" y="1353" width="68" height="68"/>
+    <SubTexture name="board/sand/sand_0001" x="1763" y="1338" width="68" height="68"/>
+    <SubTexture name="board/sand/sand_0002" x="1875" y="1283" width="68" height="68"/>
+    <SubTexture name="board/selection" x="1522" y="837" width="84" height="83" frameX="-1" frameY="-1" frameWidth="86" frameHeight="85"/>
+    <SubTexture name="board/shadow" x="1220" y="746" width="110" height="110"/>
+    <SubTexture name="board/states/ice" x="1693" y="1269" width="68" height="68"/>
+    <SubTexture name="board/states/lock" x="1763" y="1268" width="68" height="68"/>
+    <SubTexture name="board/tiles/tile" x="1693" y="1199" width="68" height="68"/>
+    <SubTexture name="fonts/cooper_black" x="2007" y="369" width="36" height="163" frameX="-2" frameY="-2" frameWidth="40" frameHeight="167"/>
+    <SubTexture name="fonts/cooper_black_24" x="363" y="769" width="39" height="128" frameX="-2" frameY="-2" frameWidth="43" frameHeight="132"/>
+    <SubTexture name="fonts/digits_white" x="1915" y="937" width="56" height="232" frameX="-2" frameY="-2" frameWidth="60" frameHeight="236"/>
+    <SubTexture name="fonts/digits_white_15" x="1183" y="594" width="35" height="187" frameX="-2" frameY="-2" frameWidth="39" frameHeight="191"/>
+    <SubTexture name="fonts/level_font" x="1163" y="959" width="42" height="88" frameX="-2" frameY="-2" frameWidth="46" frameHeight="92"/>
+    <SubTexture name="fonts/mail_ray_stuff_48" x="1222" y="2" width="208" height="508" frameX="-2" frameY="-2" frameWidth="212" frameHeight="512"/>
+    <SubTexture name="fonts/obelix_pro" x="670" y="407" width="92" height="280" frameX="-2" frameY="-2" frameWidth="96" frameHeight="284"/>
+    <SubTexture name="fonts/obelix_pro_50" x="404" y="384" width="264" height="500" frameX="-1" frameY="-2" frameWidth="266" frameHeight="504"/>
+    <SubTexture name="fonts/score_1" x="1391" y="1091" width="68" height="178" frameX="-2" frameY="-2" frameWidth="72" frameHeight="182"/>
+    <SubTexture name="fonts/score_2" x="1093" y="838" width="68" height="178" frameX="-2" frameY="-2" frameWidth="72" frameHeight="182"/>
+    <SubTexture name="fonts/score_3" x="1973" y="1257" width="68" height="178" frameX="-2" frameY="-2" frameWidth="72" frameHeight="182"/>
+    <SubTexture name="fonts/score_4" x="1522" y="922" width="68" height="178" frameX="-2" frameY="-2" frameWidth="72" frameHeight="182"/>
+    <SubTexture name="fonts/score_5" x="1348" y="568" width="68" height="178" frameX="-2" frameY="-2" frameWidth="72" frameHeight="182"/>
+    <SubTexture name="fonts/score_6" x="1973" y="1077" width="68" height="178" frameX="-2" frameY="-2" frameWidth="72" frameHeight="182"/>
+    <SubTexture name="particles/Ice" x="1659" y="1193" width="32" height="30"/>
+    <SubTexture name="particles/charge" x="1043" y="755" width="48" height="48"/>
+    <SubTexture name="particles/cloud" x="1461" y="1091" width="56" height="56" frameX="-4" frameY="-4" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="particles/dot" x="731" y="301" width="25" height="25"/>
+    <SubTexture name="particles/fire_ball" x="1043" y="705" width="48" height="48"/>
+    <SubTexture name="particles/lock" x="1659" y="1103" width="34" height="16" frameX="0" frameY="-1" frameWidth="34" frameHeight="20"/>
+    <SubTexture name="particles/orb" x="731" y="94" width="30" height="30" frameX="0" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="particles/rays" x="409" y="62" width="320" height="320"/>
+    <SubTexture name="particles/rhomb" x="731" y="62" width="30" height="30" frameX="-1" frameY="-1" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="particles/sand_particle" x="382" y="615" width="19" height="12"/>
+    <SubTexture name="particles/soil_particle" x="731" y="275" width="26" height="24"/>
+    <SubTexture name="particles/star" x="1163" y="855" width="50" height="50" frameX="-6" frameY="-7" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="particles/star2" x="1461" y="1149" width="56" height="54" frameX="-4" frameY="-5" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="particles/star4" x="1659" y="1127" width="32" height="32"/>
+    <SubTexture name="particles/star8" x="1881" y="1106" width="32" height="32"/>
+    <SubTexture name="particles/star8_big" x="1299" y="1032" width="90" height="90"/>
+    <SubTexture name="particles/stone_particle" x="382" y="532" width="20" height="18"/>
+    <SubTexture name="shadow" x="1639" y="14" width="189" height="152" frameX="0" frameY="-10" frameWidth="189" frameHeight="162"/>
+    <SubTexture name="ui/black_square" x="2030" y="70" width="10" height="10"/>
+    <SubTexture name="ui/booster/booster_bg" x="1093" y="590" width="88" height="90" frameX="-1" frameY="0" frameWidth="90" frameHeight="92"/>
+    <SubTexture name="ui/booster/booster_disabled" x="760" y="1065" width="62" height="63"/>
+    <SubTexture name="ui/booster/booster_down" x="696" y="1065" width="62" height="63"/>
+    <SubTexture name="ui/booster/booster_over" x="632" y="1065" width="62" height="63"/>
+    <SubTexture name="ui/booster/booster_up" x="2" y="1190" width="62" height="63"/>
+    <SubTexture name="ui/buttons/homeButton_down" x="1007" y="867" width="32" height="29" frameX="0" frameY="-2" frameWidth="32" frameHeight="31"/>
+    <SubTexture name="ui/buttons/homeButton_over" x="903" y="847" width="32" height="29"/>
+    <SubTexture name="ui/buttons/homeButton_up" x="1007" y="867" width="32" height="29"/>
+    <SubTexture name="ui/check" x="1659" y="1161" width="32" height="30"/>
+    <SubTexture name="ui/left_panel_bg" x="1788" y="949" width="98" height="71" frameX="0" frameY="-2" frameWidth="100" frameHeight="73"/>
+    <SubTexture name="ui/map/level_gray" x="1833" y="1268" width="40" height="40"/>
+    <SubTexture name="ui/map/level_red" x="1461" y="1247" width="40" height="40"/>
+    <SubTexture name="ui/map/level_yellow" x="1461" y="1205" width="40" height="40"/>
+    <SubTexture name="ui/map/star_1" x="1915" y="905" width="58" height="30"/>
+    <SubTexture name="ui/map/star_2" x="1915" y="873" width="58" height="30"/>
+    <SubTexture name="ui/map/star_3" x="1915" y="841" width="58" height="30"/>
+    <SubTexture name="ui/progress/bg" x="236" y="711" width="144" height="31"/>
+    <SubTexture name="ui/progress/line" x="2030" y="28" width="10" height="40"/>
+    <SubTexture name="ui/progress/progress" x="236" y="678" width="144" height="31"/>
+    <SubTexture name="ui/progress/star_gray" x="382" y="573" width="19" height="19"/>
+    <SubTexture name="ui/progress/star_yellow" x="382" y="552" width="19" height="19"/>
+    <SubTexture name="ui/progress/up" x="1788" y="762" width="170" height="77" frameX="-1" frameY="-1" frameWidth="172" frameHeight="79"/>
+    <SubTexture name="ui/targets_panel" x="1613" y="608" width="173" height="315" frameX="-1" frameY="-2" frameWidth="175" frameHeight="317"/>
+    <SubTexture name="ui/top_bar/bg" x="2" y="2" width="760" height="58" frameX="0" frameY="0" frameWidth="760" frameHeight="70"/>
+    <SubTexture name="ui/top_bar/btn_bg" x="1183" y="559" width="36" height="33"/>
+    <SubTexture name="ui/top_bar/btn_exit_down" x="903" y="816" width="32" height="29"/>
+    <SubTexture name="ui/top_bar/btn_exit_over" x="903" y="785" width="32" height="29"/>
+    <SubTexture name="ui/top_bar/btn_exit_up" x="1937" y="1477" width="32" height="29"/>
+    <SubTexture name="ui/top_bar/btn_music_down" x="1937" y="1446" width="32" height="29"/>
+    <SubTexture name="ui/top_bar/btn_music_down_off" x="1937" y="1415" width="32" height="29"/>
+    <SubTexture name="ui/top_bar/btn_music_over" x="1937" y="1384" width="32" height="29"/>
+    <SubTexture name="ui/top_bar/btn_music_over_off" x="1937" y="1353" width="32" height="29"/>
+    <SubTexture name="ui/top_bar/btn_music_up" x="1833" y="1403" width="32" height="29"/>
+    <SubTexture name="ui/top_bar/btn_music_up_off" x="1833" y="1372" width="32" height="29"/>
+    <SubTexture name="ui/top_bar/btn_plus_down" x="1183" y="485" width="37" height="34"/>
+    <SubTexture name="ui/top_bar/btn_plus_over" x="1183" y="449" width="37" height="34"/>
+    <SubTexture name="ui/top_bar/btn_plus_up" x="1183" y="413" width="37" height="34"/>
+    <SubTexture name="ui/top_bar/btn_sound_down" x="1833" y="1341" width="32" height="29"/>
+    <SubTexture name="ui/top_bar/btn_sound_down_off" x="1833" y="1310" width="32" height="29"/>
+    <SubTexture name="ui/top_bar/btn_sound_over" x="1659" y="1287" width="32" height="29"/>
+    <SubTexture name="ui/top_bar/btn_sound_over_off" x="1659" y="1256" width="32" height="29"/>
+    <SubTexture name="ui/top_bar/btn_sound_up" x="1659" y="1225" width="32" height="29"/>
+    <SubTexture name="ui/top_bar/btn_sound_up_off" x="1881" y="1140" width="32" height="29"/>
+    <SubTexture name="ui/window/button_green_down" x="1418" y="700" width="125" height="52"/>
+    <SubTexture name="ui/window/button_green_over" x="1418" y="646" width="125" height="52"/>
+    <SubTexture name="ui/window/button_green_up" x="1221" y="566" width="125" height="52"/>
+    <SubTexture name="ui/window/close_button_down" x="2007" y="218" width="39" height="35"/>
+    <SubTexture name="ui/window/close_button_over" x="2007" y="332" width="38" height="35"/>
+    <SubTexture name="ui/window/close_button_up" x="2007" y="295" width="38" height="35"/>
+    <SubTexture name="ui/window/lives/heart" x="974" y="413" width="207" height="175"/>
+    <SubTexture name="ui/window/lives/heart_five_small" x="72" y="1137" width="66" height="43"/>
+    <SubTexture name="ui/window/lives/heart_plus_small" x="72" y="1182" width="64" height="43" frameX="0" frameY="0" frameWidth="66" frameHeight="43"/>
+    <SubTexture name="ui/window/lives/plus" x="974" y="590" width="117" height="113"/>
+    <SubTexture name="ui/window/lose/broken_heart" x="2" y="721" width="232" height="187"/>
+    <SubTexture name="ui/window/lose/heart" x="2" y="532" width="232" height="187"/>
+    <SubTexture name="ui/window/lose/minus_one" x="1220" y="620" width="110" height="124"/>
+    <SubTexture name="ui/window/moves/circle" x="236" y="532" width="144" height="144"/>
+    <SubTexture name="ui/window/moves/donat" x="1183" y="521" width="36" height="36"/>
+    <SubTexture name="ui/window/moves/image_border" x="1181" y="783" width="34" height="34"/>
+    <SubTexture name="ui/window/moves/rect" x="1837" y="2" width="191" height="98"/>
+    <SubTexture name="ui/window/moves/sad_monster" x="1825" y="218" width="180" height="180"/>
+    <SubTexture name="ui/window/moves/share_button_down" x="1222" y="512" width="125" height="52"/>
+    <SubTexture name="ui/window/moves/share_button_over" x="1788" y="895" width="125" height="52"/>
+    <SubTexture name="ui/window/moves/share_button_up" x="1788" y="841" width="125" height="52"/>
+    <SubTexture name="ui/window/result/next_button_down" x="1975" y="702" width="70" height="52"/>
+    <SubTexture name="ui/window/result/next_button_over" x="1975" y="648" width="70" height="52"/>
+    <SubTexture name="ui/window/result/next_button_up" x="1975" y="594" width="70" height="52"/>
+    <SubTexture name="ui/window/result/score_rect" x="1830" y="102" width="184" height="114" frameX="-3" frameY="-1" frameWidth="190" frameHeight="116"/>
+    <SubTexture name="ui/window/result/share_button_down" x="236" y="852" width="125" height="52"/>
+    <SubTexture name="ui/window/result/share_button_over" x="236" y="798" width="125" height="52"/>
+    <SubTexture name="ui/window/result/share_button_up" x="236" y="744" width="125" height="52"/>
+    <SubTexture name="ui/window/result/star" x="1332" y="834" width="84" height="84"/>
+    <SubTexture name="ui/window/result/star_bg" x="1332" y="748" width="84" height="84"/>
+    <SubTexture name="ui/window/result/user" x="1639" y="168" width="184" height="76" frameX="-1" frameY="0" frameWidth="186" frameHeight="76"/>
+    <SubTexture name="ui/window/result/user_best" x="1432" y="208" width="184" height="74" frameX="-1" frameY="0" frameWidth="186" frameHeight="76"/>
+    <SubTexture name="ui/window/shop/badge" x="1522" y="766" width="86" height="69"/>
+    <SubTexture name="ui/window/shop/coin_1" x="2007" y="255" width="38" height="38" frameX="-20" frameY="-24" frameWidth="92" frameHeight="82"/>
+    <SubTexture name="ui/window/shop/coin_2" x="1043" y="805" width="48" height="46" frameX="-16" frameY="-19" frameWidth="92" frameHeight="82"/>
+    <SubTexture name="ui/window/shop/coin_3" x="1349" y="512" width="76" height="54" frameX="-8" frameY="-15" frameWidth="92" frameHeight="82"/>
+    <SubTexture name="ui/window/shop/coin_4" x="1788" y="1022" width="92" height="82"/>
+    <SubTexture name="ui/window/shop/discount" x="1592" y="925" width="102" height="73"/>
+    <SubTexture name="ui/window/shop/discount_12" x="1418" y="904" width="102" height="73"/>
+    <SubTexture name="ui/window/shop/discount_20" x="1418" y="829" width="102" height="73"/>
+    <SubTexture name="ui/window/shop/discount_7" x="1418" y="754" width="102" height="73"/>
+    <SubTexture name="ui/window/shop/rect" x="2" y="62" width="405" height="65"/>
+    <SubTexture name="ui/window/window" x="764" y="2" width="456" height="409" frameX="-2" frameY="-2" frameWidth="458" frameHeight="411"/>
+    <SubTexture name="ui/yellow_square" x="363" y="757" width="10" height="10"/>
+</TextureAtlas>

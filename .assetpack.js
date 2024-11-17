@@ -6,6 +6,7 @@ export default {
     cache: true,
     pipes: [
         ...pixiPipes({
+            compression: { jpg: false, png: false, webp: false },
             texturePacker: {
                 texturePacker: {
                     removeFileExtension: true,
