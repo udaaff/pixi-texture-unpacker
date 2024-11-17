@@ -10,7 +10,6 @@ export const app = new Application();
 async function init() {
     // Initialize app
     await app.init({
-        // resolution: 1,
         backgroundColor: 0x000000,
     });
 
@@ -23,11 +22,9 @@ async function init() {
     const sprite = Sprite.from("graphic.png")
     const container = new Container();
     container.addChild(sprite);
-    // app.stage.addChild(container)
 
     const regions = await parseXMLRegions(Assets.get("graphic.xml"));
     saveRegionsAsZip(container, regions, "unpacked.zip")
-
 }
 
 async function saveRegionsAsZip(
@@ -36,6 +33,7 @@ async function saveRegionsAsZip(
     zipFileName: string
 ) {
     const renderer = app.renderer;
+    renderer.resolution = Math.max(window.devicePixelRatio, 2); // Ensure resolution is correct
     const zip = new JSZip();
 
     for (let i = 0; i < regions.length; i++) {
@@ -43,7 +41,11 @@ async function saveRegionsAsZip(
         const { x, y, width, height } = rectangle;
 
         // Create a render texture for the trimmed region
-        const renderTexture = RenderTexture.create({ width, height });
+        const renderTexture = RenderTexture.create({
+            width,
+            height,
+            resolution: renderer.resolution,
+        });
 
         // Clone the container for rendering
         const clonedContainer = cloneContainer(container);
@@ -64,13 +66,13 @@ async function saveRegionsAsZip(
 
             // Create a new canvas for the full frame
             const frameCanvas = document.createElement("canvas");
-            frameCanvas.width = frameWidth;
-            frameCanvas.height = frameHeight;
+            frameCanvas.width = frameWidth * renderer.resolution;
+            frameCanvas.height = frameHeight * renderer.resolution;
 
             const context = frameCanvas.getContext("2d")!;
+            context.scale(renderer.resolution, renderer.resolution); // Scale for resolution
             // Draw the trimmed texture onto the full frame
-            // Adjust position using relative frameX and frameY
-            context.drawImage(canvas, 0, 0, width, height, -frameX, -frameY, width, height);
+            context.drawImage(canvas, 0, 0, width * renderer.resolution, height * renderer.resolution, -frameX, -frameY, width, height);
 
             // Replace the original canvas with the frame canvas
             const dataURL = frameCanvas.toDataURL("image/png");
@@ -153,8 +155,8 @@ async function parseXMLRegions(xmlContent: string) {
         // Optional frame attributes
         const frameX = parseFloat(subTexture.getAttribute("frameX") || "0");
         const frameY = parseFloat(subTexture.getAttribute("frameY") || "0");
-        const frameWidth = parseFloat(subTexture.getAttribute("frameWidth") || width);
-        const frameHeight = parseFloat(subTexture.getAttribute("frameHeight") || height);
+        const frameWidth = parseFloat(subTexture.getAttribute("frameWidth") || "0") || width;
+        const frameHeight = parseFloat(subTexture.getAttribute("frameHeight") || "0") || height;
 
         const rectangle = new Rectangle(x, y, width, height);
 
@@ -168,7 +170,6 @@ async function parseXMLRegions(xmlContent: string) {
 
     return regions;
 }
-
 
 // Init everything
 init();
